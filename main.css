@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css?family=Amaranth:400,700|Nunito:400,700,700i|Open+Sans:400,700");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fcf7fb;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #110922;
+}
+
+#wrapper {
+  position: relative;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+}
+
+a:active,
+a:visited {
+  color: #110922;
+}
+
+a:hover {
+  border-bottom: 3px solid #df5e92;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100vh;
+  margin: 0 auto;
+}
+
+/* start header styles */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  position: fixed;
+  width: 100wh;
+  top: 0;
+  min-height: 80px;
+}
+
+@media (max-width: 600px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+}
+
+header nav, header #img {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 50%;
+  margin: 1% 2% 0 2%;
+  background-color: inherit;
+}
+
+@media (max-width: 600px) {
+  header nav, header #img {
+    width: 60%;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  header #img {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    text-align: center;
+  }
+}
+
+header img {
+  width: 40%;
+  height: auto;
+  padding-left: 20px;
+  padding-top: 10px;
+  background-color: inherit;
+}
+
+@media (max-width: 750px) {
+  header img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  header img {
+    width: 30%;
+    padding: 1% 0 0 0;
+  }
+}
+
+header ul {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 20px;
+}
+
+@media (max-width: 750px) {
+  header ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+    margin-top: 0px;
+  }
+}
+
+header li {
+  display: block;
+  width: auto;
+  text-align: center;
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 750px) {
+  header li {
+    margin-bottom: 3px;
+  }
+}
+
+/* end header styles */
+main {
+  margin-top: 80px;
+}
+
+@media (max-width: 600px) {
+  main {
+    margin-top: 140px;
+  }
+}
+
+main form {
+  text-align: center;
+}
+
+main h1 {
+  padding-top: 20px;
+  font-family: "Amaranth", sans-serif;
+  text-align: center;
+}
+
+main p {
+  padding: 1%;
+}
+
+main input[type=email] {
+  width: 280px;
+  padding: 7px;
+}
+
+main input[type=submit] {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  background-color: #df5e92;
+  padding: 0.3% 1.4%;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: #fcf7fb;
+}
+
+main #features {
+  margin-top: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #features .icon {
+  width: 30%;
+}
+
+main #features .desc {
+  width: 70%;
+}
+
+footer {
+  background-color: #dffffd;
+}
+/*# sourceMappingURL=main.css.map */
