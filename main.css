@@ -36,7 +36,7 @@ a:hover {
 
 .container {
   max-width: 1000px;
-  width: 100vh;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -204,17 +204,107 @@ main #features {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 main #features .icon {
-  width: 30%;
+  width: 15%;
+  padding: 3% 0 1% 0;
+}
+
+@media screen and (max-width: 600px) {
+  main #features .icon {
+    display: none;
+  }
+}
+
+main #features .icon i {
+  font-size: 50px;
+  color: #df5e92;
 }
 
 main #features .desc {
+  width: 85%;
+  padding: 2% 0;
+}
+
+@media screen and (max-width: 600px) {
+  main #features .desc {
+    width: 100%;
+    text-align: center;
+    padding: 1% 0;
+  }
+}
+
+main #video-emb {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+main #video-emb iframe {
+  max-width: 560px;
+  width: 100%;
+}
+
+main #price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 5%;
+}
+
+main #price .box {
+  width: 32%;
+  border: 2px solid #df5e92;
+  text-align: center;
+}
+
+main #price h2 {
+  background-color: #ffd4e5;
+  padding: 3% 0;
+  font-family: "Amaranth", sans-serif;
+}
+
+main #price .img {
   width: 70%;
+  margin: 2% auto;
+}
+
+main #price img {
+  width: 100%;
+  height: auto;
+}
+
+main #price button {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  background-color: #df5e92;
+  padding: 1% 10%;
+  border-radius: 8px;
+  text-transform: uppercase;
+  color: #fcf7fb;
+  margin: 0 1px 3% 1px;
 }
 
 footer {
-  background-color: #dffffd;
+  background-color: #ffd4e5;
 }
 /*# sourceMappingURL=main.css.map */
